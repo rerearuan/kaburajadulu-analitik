@@ -1,0 +1,46 @@
+# Environment and Secrets
+.env
+*.env.local
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+dist/
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs and Archive
+logs/
+archive/
+outputs/
+*.zip
+
+# Data Privacy & Platform X Terms of Service Compliance
+# In accordance with X Developer Agreement & Policy regarding public redistribution,
+# raw scraped tweet payloads and full tweet text CSVs are retained locally and shared
+# with course instructors via restricted academic access, not pushed to public GitHub.
+data/raw/raw_tweets.jsonl
+data/interim/*.csv
+data/interim/*.json
+data/processed/*.csv
+data/releases/tk2_v1/corpus.csv
+data/releases/tk2_v1/preprocessed.csv

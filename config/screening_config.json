@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "classifier_type": "local_rule_lexical_discourse_classifier",
+  "uses_external_llm": false,
+  "uses_neural_embeddings": false,
+  "default_model_id": "anmedsos-rule-hybrid-v1",
+  "supported_relevance_values": ["include", "exclude", "review"],
+  "supported_uncertainty_levels": ["low", "medium", "high"],
+  "reason_codes": {
+    "employment_concern": "Substantive discussion about Indonesian employment hardships, job seeking, or labor conditions.",
+    "abroad_aspiration": "Explicit personal intent or desire to work overseas from Indonesia.",
+    "abroad_discourse": "Substantive discussion, advice, news, or policy concerning working abroad relevant to Indonesians.",
+    "issue_abroad_link": "Direct causal connection between Indonesian domestic labor challenges and working abroad.",
+    "sports_entertainment_exclusion": "Sports recruitment, athlete transfers, or entertainment casting.",
+    "promotional_spam_exclusion": "Commercial promotional spam, commercial job board link dumps, or irrelevant marketing.",
+    "academic_household_exclusion": "Academic assignments, school homework, or domestic chores unrelated to labor market.",
+    "foreign_unrelated_exclusion": "Foreign labor news or migration with no relevance to Indonesia.",
+    "incidental_mention_exclusion": "Keyword occurred in passing without substantive employment context.",
+    "insufficient_context_review": "Tweet is truncated, missing conversational referent, or too ambiguous for deterministic classification.",
+    "sarcasm_codemix_review": "High ambiguity caused by heavy code-mixing, dialect, or sarcasm requiring human review."
+  },
+  "quality_gate": {
+    "target_precision_min": 0.85,
+    "target_recall_min": 0.80,
+    "max_review_rate": 0.15
+  }
+}

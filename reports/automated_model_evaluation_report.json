@@ -1,0 +1,232 @@
+{
+  "report_title": "ANMEDSOS Automated Independent Model Evaluation Report",
+  "generated_at_utc": "2026-10-27T13:50:11.775511+00:00",
+  "evaluator_model": {
+    "model_id": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+    "model_name": "mDeBERTa-v3-base-xnli",
+    "model_version": "2mil7",
+    "device": "mps",
+    "architecture": "Multilingual DeBERTa-v3 (XNLI fine-tuned on 100 languages)",
+    "execution_duration_seconds": 348.92
+  },
+  "evaluation_sample_150_metrics": {
+    "total_records": 150,
+    "evaluated_confident_total": 148,
+    "agreement_count": 123,
+    "disagreement_count": 25,
+    "agreement_rate": 0.8311,
+    "disagreement_rate": 0.1689,
+    "cohens_kappa": -0.0255,
+    "relative_confusion_matrix": {
+      "pseudo_true_positive_both_include": 123,
+      "pseudo_false_positive_init_inc_eval_exc": 2,
+      "pseudo_false_negative_init_exc_eval_inc": 23,
+      "pseudo_true_negative_both_exclude": 0
+    },
+    "relative_model_to_model_metrics": {
+      "relative_pseudo_precision": 0.984,
+      "relative_pseudo_recall": 0.8425,
+      "relative_pseudo_f1": 0.9078,
+      "metric_disclaimer": "Metrics are model-to-model cross-validation estimates relative to the independent AI judge, NOT human gold standard."
+    },
+    "uncertainty_counts": {
+      "evaluator_uncertain_abstentions": 2,
+      "initial_classifier_review_abstentions": 0
+    }
+  },
+  "stratum_breakdown_150_sample": {
+    "abroad_without_clear_work": {
+      "count": 18,
+      "agreement_rate": 1.0,
+      "disagreement_count": 0,
+      "fp_candidates": 0,
+      "fn_candidates": 0
+    },
+    "employment_context": {
+      "count": 90,
+      "agreement_rate": 0.8989,
+      "disagreement_count": 9,
+      "fp_candidates": 1,
+      "fn_candidates": 8
+    },
+    "no_employment_topic": {
+      "count": 10,
+      "agreement_rate": 0.0,
+      "disagreement_count": 10,
+      "fp_candidates": 0,
+      "fn_candidates": 10
+    },
+    "too_short": {
+      "count": 2,
+      "agreement_rate": 1.0,
+      "disagreement_count": 0,
+      "fp_candidates": 0,
+      "fn_candidates": 0
+    },
+    "work_context_not_specific": {
+      "count": 30,
+      "agreement_rate": 0.8,
+      "disagreement_count": 6,
+      "fp_candidates": 1,
+      "fn_candidates": 5
+    }
+  },
+  "full_corpus_1781_metrics": {
+    "total_records": 1781,
+    "evaluated_confident_total": 1720,
+    "agreement_count": 1468,
+    "disagreement_count": 252,
+    "agreement_rate": 0.8535,
+    "disagreement_rate": 0.1465,
+    "cohens_kappa": 0.0609,
+    "relative_confusion_matrix": {
+      "pseudo_true_positive_both_include": 1455,
+      "pseudo_false_positive_init_inc_eval_exc": 21,
+      "pseudo_false_negative_init_exc_eval_inc": 231,
+      "pseudo_true_negative_both_exclude": 13
+    },
+    "relative_model_to_model_metrics": {
+      "relative_pseudo_precision": 0.9858,
+      "relative_pseudo_recall": 0.863,
+      "relative_pseudo_f1": 0.9203,
+      "metric_disclaimer": "Metrics are model-to-model cross-validation estimates relative to the independent AI judge, NOT human gold standard."
+    },
+    "uncertainty_counts": {
+      "evaluator_uncertain_abstentions": 46,
+      "initial_classifier_review_abstentions": 15
+    }
+  },
+  "rq2_issue_abroad_link_diagnostic": {
+    "initial_classifier_link_count": 6,
+    "independent_evaluator_link_candidates_count": 1207,
+    "link_candidates_summary": [
+      {
+        "post_id": "2006523529886576795",
+        "text_snippet": "Lantas, kenapa jadi Pendatang Tanpa Izin dan menghadapi pelbagai kesukaran dan masalah padahal peluang Tenaga Kerja Indonesia sentiasa terbu",
+        "initial_decision": "include",
+        "evaluator_decision": "include",
+        "evaluator_top_label": "rel_issue_abroad_link",
+        "evaluator_confidence": 0.5285
+      },
+      {
+        "post_id": "2006524773594182062",
+        "text_snippet": "Citigroup: walaupun pengangguran turun, itu tidak menjadikan PHK berkurang. Hanya karena liburan hotel penuh maka jumlah pekerjaan naik, pre",
+        "initial_decision": "include",
+        "evaluator_decision": "include",
+        "evaluator_top_label": "rel_issue_abroad_link",
+        "evaluator_confidence": 0.6709
+      },
+      {
+        "post_id": "2006591223075844138",
+        "text_snippet": "Mau selangkah lebih dekat dengan oppa &amp; noona tersayang? Gabung 🇰🇷Korean study club komunitas Kabur Aja Dulu, yuk! 나중에 봐요~\n\n🗓️ Kamis, 01",
+        "initial_decision": "include",
+        "evaluator_decision": "include",
+        "evaluator_top_label": "rel_issue_abroad_link",
+        "evaluator_confidence": 0.4291
+      },
+      {
+        "post_id": "2006625583283986519",
+        "text_snippet": "Waspada antek asing\nDemo ditunggangi koruptor\nKabur Aja Dulu? Kabur aja lu\nKasus keracunan MBG cuma 0,00017%\nApa itu deforestasi? Sawit juga",
+        "initial_decision": "include",
+        "evaluator_decision": "include",
+        "evaluator_top_label": "rel_issue_abroad_link",
+        "evaluator_confidence": 0.6836
+      },
+      {
+        "post_id": "2006665648571846875",
+        "text_snippet": "@KRathalos97 @hollowlaundrY32 @UseKidd @Uzzzzz222 @Fountaine30 @O5Bravo @DanielPonidi69 @DaniSplatKing @Lord_Mudcrab95 @malecatladyyy @Mas_s",
+        "initial_decision": "include",
+        "evaluator_decision": "include",
+        "evaluator_top_label": "rel_issue_abroad_link",
+        "evaluator_confidence": 0.4922
+      },
+      {
+        "post_id": "2006669160777212197",
+        "text_snippet": "@meinmokhtar It only works when your skill level tinggi and gaji rendah. But once salary dah lebih tinggi dari skill akan jadi problem. Over",
+        "initial_decision": "include",
+        "evaluator_decision": "include",
+        "evaluator_top_label": "rel_issue_abroad_link",
+        "evaluator_confidence": 0.6856
+      },
+      {
+        "post_id": "2006692515915952243",
+        "text_snippet": "@BigAlphaID Buat konsumtif, yg mau ambil kredit jg ati2 lg ga jelas. Klo jd karyawan Tiba2 kena phk gmn. Jd pengusaha Tiba2 yg malak tambah ",
+        "initial_decision": "include",
+        "evaluator_decision": "include",
+        "evaluator_top_label": "rel_issue_abroad_link",
+        "evaluator_confidence": 0.8605
+      },
+      {
+        "post_id": "2006720864910450980",
+        "text_snippet": "Harap 2026 ni dapat peluang kerja baru.\n\nDan perjalanan 2026 dipermudahkan.",
+        "initial_decision": "exclude",
+        "evaluator_decision": "include",
+        "evaluator_top_label": "rel_issue_abroad_link",
+        "evaluator_confidence": 0.4774
+      },
+      {
+        "post_id": "2006721494186078238",
+        "text_snippet": "RANGKUMAN 2025: Pemangku Sultan Johor Menerajui Perubahan, Membina Legasi Bangsa Johor.\n\nTahun 2025 melakar satu transformasi penting Negeri",
+        "initial_decision": "exclude",
+        "evaluator_decision": "include",
+        "evaluator_top_label": "rel_issue_abroad_link",
+        "evaluator_confidence": 0.8494
+      },
+      {
+        "post_id": "2006735534111211916",
+        "text_snippet": "Wallah ini am finished",
+        "initial_decision": "review",
+        "evaluator_decision": "include",
+        "evaluator_top_label": "rel_issue_abroad_link",
+        "evaluator_confidence": 0.4443
+      },
+      {
+        "post_id": "2006746415373111529",
+        "text_snippet": "Sepanjang 2025, berbagai isu hangat menjadi sorotan warganet, mulai dari program Makan Bergizi Gratis, tagar #KaburAjaDulu, hingga tarif imp",
+        "initial_decision": "include",
+        "evaluator_decision": "include",
+        "evaluator_top_label": "rel_issue_abroad_link",
+        "evaluator_confidence": 0.6669
+      },
+      {
+        "post_id": "2006752773963133119",
+        "text_snippet": "@jangetes @blackshark7890 Mohon Bpk presiden @prabowo untuk solusi yg kena PHK masal!!",
+        "initial_decision": "include",
+        "evaluator_decision": "include",
+        "evaluator_top_label": "rel_issue_abroad_link",
+        "evaluator_confidence": 0.7485
+      },
+      {
+        "post_id": "2006941383995842811",
+        "text_snippet": "joki bantuin aku buat cv lamar kerja dong gengs yg udh ada portofolio ya #zonauang #zonaBa \n\nlangsung sebut harga",
+        "initial_decision": "include",
+        "evaluator_decision": "include",
+        "evaluator_top_label": "rel_issue_abroad_link",
+        "evaluator_confidence": 0.8064
+      },
+      {
+        "post_id": "2006962119380730127",
+        "text_snippet": "@tanyarlfes Kalo aku kebalik pas lagi fase jaya jayanya perempuan yang aku sayang ada buat aku. Segala kesulitannya aku bantu baik dari mate",
+        "initial_decision": "include",
+        "evaluator_decision": "include",
+        "evaluator_top_label": "rel_issue_abroad_link",
+        "evaluator_confidence": 0.6099
+      },
+      {
+        "post_id": "2006965831952118109",
+        "text_snippet": "@qepo_s case yg nomor 2.. junior emang lagi susah cari kerja sih\n\nsolusi emang bner\" ikut intern di perusahaan.. terus ya berharap dari peru",
+        "initial_decision": "include",
+        "evaluator_decision": "include",
+        "evaluator_top_label": "rel_issue_abroad_link",
+        "evaluator_confidence": 0.8235
+      }
+    ],
+    "analysis_notes": "Explicit causal links between domestic unemployment and overseas aspiration are genuinely rare in single tweets. Most tweets discuss either domestic job hardships OR abroad opportunities separately."
+  },
+  "output_artifacts": {
+    "sample_csv": "data/interim/automated_evaluation_sample_v1.csv",
+    "full_csv": "data/interim/automated_evaluation_full_1781_v1.csv",
+    "report_json": "reports/automated_model_evaluation_report.json",
+    "report_md": "reports/automated_model_evaluation_report.md"
+  }
+}

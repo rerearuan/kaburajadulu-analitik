@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0",
+  "labels": {
+    "employment_issue": {
+      "rq": "RQ1",
+      "description": "Substantive discussion of Indonesian employment hardships, unemployment, fresh grad struggles, layoffs (PHK), low wages, or unfavorable working conditions.",
+      "values": [0, 1, null]
+    },
+    "abroad_aspiration": {
+      "rq": "RQ2",
+      "description": "Personal expression of intent, desire, plan, or active motivation to work overseas (e.g., personal #KaburAjaDulu, wanting a work visa abroad).",
+      "values": [0, 1, null]
+    },
+    "abroad_discourse": {
+      "rq": "RQ2",
+      "description": "Public discussion, advice, informative sharing, news, or general societal debate regarding overseas employment for Indonesians, without necessarily expressing personal aspiration.",
+      "values": [0, 1, null]
+    },
+    "issue_abroad_link": {
+      "rq": "RQ2",
+      "description": "Explicitly connects Indonesian domestic labor-market challenges (e.g. low salaries, age restrictions, PHK) to the aspiration or decision to seek employment abroad. Note: Only 6 tweets in the current corpus exhibit an explicit single-tweet causal link, and this classification remains provisional. (RQ3 is sentiment analysis across topics and aspirations and has NOT been executed yet).",
+      "values": [0, 1, null],
+      "requires": ["employment_issue", "abroad_context"]
+    }
+  },
+  "constraints": {
+    "link_requires_both": "issue_abroad_link cannot be 1 unless the post provides explicit evidence connecting domestic employment problems to abroad opportunities or migration.",
+    "aspiration_vs_discourse": "General discourse about working abroad must not be tagged as abroad_aspiration unless the author clearly expresses personal aspiration."
+  }
+}

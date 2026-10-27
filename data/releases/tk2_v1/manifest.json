@@ -1,0 +1,151 @@
+{
+  "release_version": "tk2_v1",
+  "release_name": "ANMEDSOS TK-2 Research Corpus Release v1",
+  "created_at_utc": "2026-10-27T15:09:31.061326+00:00",
+  "git_commit": "9f2bbd2c8c01bd8cb63c494b7304fd4021682dbb",
+  "validation_status": "PROVISIONAL (64 historical human-audited posts, 1,427 rule-hybrid selections)",
+  "source_provenance": {
+    "raw_tweets_file": "data/raw/raw_tweets.jsonl",
+    "raw_tweets_sha256": "4d85c6950b83e5f8af7227c0d1b8499da9a7cb572507595814b2efcd71bdcf87",
+    "manual_labels_file": "data/interim/manual_labels.csv",
+    "manual_labels_sha256": "0164ee0302fbd92abed71d3b54a6dc9ae2ba201af826ed80b5ec097e567bbc0b",
+    "prior_final_corpus_sha256": "4ea0ae5ea5efd19afa5d9ca8bba995a6a96bfd25bd7105137ae70d1fcd398b9c",
+    "prior_final_preprocessed_sha256": "335d84ed36121772656cae5cea214653aaaa7148175356e235e4afdee78a589e"
+  },
+  "release_files": {
+    "corpus_csv": {
+      "path": "data/releases/tk2_v1/corpus.csv",
+      "rows": 1491,
+      "columns": 33,
+      "sha256": "1254a6fbcf436ac6c396cffa4256ce78887ef2cce2eb468e2af2afd536f88485"
+    },
+    "preprocessed_csv": {
+      "path": "data/releases/tk2_v1/preprocessed.csv",
+      "rows": 1491,
+      "columns": 40,
+      "sha256": "24991e3c0865416ff06d1e8133a3eaec427a1f724fa8dd0bc82fb988bba1451a"
+    },
+    "exclusion_log_csv": {
+      "path": "data/releases/tk2_v1/exclusion_log.csv",
+      "rows": 1,
+      "sha256": "fab9ae2dc5b3d60e2d98856c435cb75b4953d59554bd7c6c341572fafc8d07cd"
+    }
+  },
+  "selection_composition": {
+    "total_corpus_rows": 1491,
+    "historical_manual_include": 64,
+    "model_include_provisional": 1427,
+    "excluded_url_only_count": 1
+  },
+  "temporal_coverage": {
+    "intended_study_period": "2026-01-01 to 2026-10-25 (WIB)",
+    "observed_corpus_period": "2026-01-01 to 2026-10-07 (WIB)",
+    "raw_data_stream_period": "2025-12-31 to 2026-10-09 (WIB)",
+    "unsampled_window_gap": "2026-10-08 to 2026-10-25 (unsampled by executed crawler tasks)",
+    "sampling_schedule": "12 weekly windows across Jan-Oct 2026"
+  },
+  "rq_coverage_statistics": {
+    "denominator_total_corpus": 1491,
+    "employment_issue_rq1": {
+      "count": 985,
+      "percentage": 66.06
+    },
+    "abroad_aspiration_rq2_personal": {
+      "count": 207,
+      "percentage": 13.88
+    },
+    "abroad_discourse_rq2_public": {
+      "count": 447,
+      "percentage": 29.98
+    },
+    "issue_abroad_link_rq2_causal": {
+      "count": 8,
+      "percentage": 0.54
+    },
+    "posts_with_at_least_one_rq": {
+      "count": 1381,
+      "percentage": 92.62
+    },
+    "contextual_or_boundary_discourse_without_specific_rq": {
+      "count": 110,
+      "percentage": 7.38,
+      "notes": "Legitimate career advice, macroeconomic context, or general discourse retained without artificial label inflation."
+    },
+    "monthly_distribution": {
+      "2026-01": {
+        "total": 167,
+        "employment_issue": 100,
+        "abroad_aspiration": 33,
+        "abroad_discourse": 63,
+        "issue_abroad_link": 1
+      },
+      "2026-02": {
+        "total": 164,
+        "employment_issue": 122,
+        "abroad_aspiration": 20,
+        "abroad_discourse": 39,
+        "issue_abroad_link": 2
+      },
+      "2026-03": {
+        "total": 123,
+        "employment_issue": 76,
+        "abroad_aspiration": 17,
+        "abroad_discourse": 40,
+        "issue_abroad_link": 0
+      },
+      "2026-04": {
+        "total": 147,
+        "employment_issue": 95,
+        "abroad_aspiration": 25,
+        "abroad_discourse": 47,
+        "issue_abroad_link": 1
+      },
+      "2026-05": {
+        "total": 141,
+        "employment_issue": 111,
+        "abroad_aspiration": 2,
+        "abroad_discourse": 21,
+        "issue_abroad_link": 0
+      },
+      "2026-06": {
+        "total": 161,
+        "employment_issue": 102,
+        "abroad_aspiration": 24,
+        "abroad_discourse": 49,
+        "issue_abroad_link": 0
+      },
+      "2026-07": {
+        "total": 161,
+        "employment_issue": 109,
+        "abroad_aspiration": 21,
+        "abroad_discourse": 52,
+        "issue_abroad_link": 1
+      },
+      "2026-08": {
+        "total": 172,
+        "employment_issue": 118,
+        "abroad_aspiration": 20,
+        "abroad_discourse": 46,
+        "issue_abroad_link": 2
+      },
+      "2026-09": {
+        "total": 123,
+        "employment_issue": 69,
+        "abroad_aspiration": 24,
+        "abroad_discourse": 45,
+        "issue_abroad_link": 0
+      },
+      "2026-10": {
+        "total": 132,
+        "employment_issue": 83,
+        "abroad_aspiration": 21,
+        "abroad_discourse": 45,
+        "issue_abroad_link": 1
+      }
+    }
+  },
+  "methodological_statements": {
+    "text_representations_identical": "In TK-2 release, text_clean, text_topic, and text_sentiment are intentionally identical baseline representations with URLs/mentions removed, HTML unescaped, Unicode NFC normalized, casefolded, and slang dictionary applied. No sentiment-specific polarity modifications or topic-specific stopword stemmings have been applied at this stage; specialized transformations are explicitly deferred to downstream tasks (TK-3/TK-4).",
+    "ai_judge_status": "The multilingual zero-shot NLI model (MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7) results are maintained separately in data/interim/automated_evaluation_*.csv. They represent model-to-model cross-validation with an 85.35% agreement rate and documented composite hypothesis over-inclusion caveats, NOT ground truth."
+  }
+}

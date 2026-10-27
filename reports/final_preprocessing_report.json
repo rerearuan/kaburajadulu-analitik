@@ -1,0 +1,46 @@
+{
+  "source_file": "data/processed/final_corpus.csv",
+  "source_sha256": "4ea0ae5ea5efd19afa5d9ca8bba995a6a96bfd25bd7105137ae70d1fcd398b9c",
+  "output_file": "data/processed/final_preprocessed.csv",
+  "output_sha256": "335d84ed36121772656cae5cea214653aaaa7148175356e235e4afdee78a589e",
+  "input_rows": 1492,
+  "output_rows": 1492,
+  "unique_post_ids": 1492,
+  "status_counts": {
+    "candidate_unverified": 871,
+    "confirmed_relevant": 64,
+    "needs_review": 536,
+    "auto_excluded": 21
+  },
+  "language_breakdown": {
+    "indonesian": 1389,
+    "mixed_id_en": 70,
+    "english": 33
+  },
+  "clean_empty_count": 1,
+  "possible_truncation_heuristic_count": 913,
+  "explicit_truncation_signal_count": 21,
+  "preprocessing_steps": [
+    "HTML entity unescaping (html.unescape)",
+    "Unicode NFC normalization",
+    "URL removal",
+    "Mention removal",
+    "Control-character spacing",
+    "Casefold normalization",
+    "Explicit whole-token slang dictionary",
+    "Whitespace collapse",
+    "Task-specific representation mapping (topic / sentiment)"
+  ],
+  "preserved": [
+    "text_raw (100% byte-exact)",
+    "hashtags (#kaburajadulu)",
+    "emoji and pictographs",
+    "negation (tidak/bukan/belum/jangan)",
+    "source provenance and engagement metadata"
+  ],
+  "notes": [
+    "text_topic and text_sentiment are tailored baselines for downstream BERTopic and sentiment modeling.",
+    "possible_truncation is a broad heuristic; explicit_truncation isolates ellipsis or dangling phrases.",
+    "text_raw is strictly unmutated."
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "evaluation_title": "Semantic Relevance Classifier Evaluation",
+  "total_records_screened": 1781,
+  "independent_evaluation_sample_created": {
+    "path": "/Users/reginaaruan/Documents/ANMEDSOS/data/interim/evaluation_sample.csv",
+    "sample_size": 150,
+    "sampling_method": "Stratified random sampling across heuristic statuses and calendar months (seed=42)",
+    "gold_labels_prefilled": false
+  },
+  "historical_ground_truth_benchmark": {
+    "ground_truth_sample_size": 95,
+    "contingency_matrix": {
+      "TP": 63,
+      "FP": 25,
+      "TN": 6,
+      "FN": 1
+    },
+    "metrics": {
+      "precision": 0.7159,
+      "recall": 0.9844,
+      "f1_score": 0.8289,
+      "accuracy": 0.7263,
+      "abstention_rate": 0.0
+    },
+    "disagreements_count": 26,
+    "disagreement_samples": [
+      {
+        "post_id": "2006669160777212197",
+        "gold": "exclude",
+        "pred": "include",
+        "reason_code": "employment_concern",
+        "text_sample": "@meinmokhtar It only works when your skill level tinggi and gaji rendah. But once salary dah lebih tinggi dari skill aka",
+        "error_type": "False Positive (Over-inclusion)"
+      },
+      {
+        "post_id": "2006924229380555157",
+        "gold": "exclude",
+        "pred": "include",
+        "reason_code": "abroad_discourse",
+        "text_sample": "Yg (KTP Jabar) info peluang &amp; pelatihan kerja ke luar negeri ada di:\nhttps://t.co/QY8eTxsXpa\n\nKTP daerah lain bisa m",
+        "error_type": "False Positive (Over-inclusion)"
+      },
+      {
+        "post_id": "2007692356238356962",
+        "gold": "exclude",
+        "pred": "include",
+        "reason_code": "abroad_discourse",
+        "text_sample": "@BangPino__ @DPR_RI  Kasih tau ke anggotanya, mending mereka kerja ke luar negeri kayak ke jeoang atau korea, setahun ba",
+        "error_type": "False Positive (Over-inclusion)"
+      },
+      {
+        "post_id": "2008389628043399461",
+        "gold": "exclude",
+        "pred": "include",
+        "reason_code": "abroad_aspiration",
+        "text_sample": "#BuletinBernama : Lima penunggang motosikal yang dalam perjalanan ke tempat kerja di Singapura cedera ringan selepas ter",
+        "error_type": "False Positive (Over-inclusion)"
+      },
+      {
+        "post_id": "2008406226179334592",
+        "gold": "exclude",
+        "pred": "include",
+        "reason_code": "abroad_aspiration",
+        "text_sample": "@poisonece @tanyarlfes POV dari orang yang gak pernah kerja di jepang",
+        "error_type": "False Positive (Over-inclusion)"
+      },
+      {
+        "post_id": "2008692436667887848",
+        "gold": "include",
+        "pred": "exclude",
+        "reason_code": "incidental_mention_exclusion",
+        "text_sample": "@tanyakanrl Bantu orang tua jualan masuk pengalaman kerja. Punya olshop pengalaman kerja, tapi belum tentu disukai karen",
+        "error_type": "False Negative (Under-inclusion)"
+      },
+      {
+        "post_id": "2008860534444331502",
+        "gold": "exclude",
+        "pred": "include",
+        "reason_code": "employment_concern",
+        "text_sample": "@dexisback_ Gue bingung kadang sama kaum2 kaya gitu di X. Gak takut apa yak mukanya kemana2. Mau lo tutupin pke hp juga ",
+        "error_type": "False Positive (Over-inclusion)"
+      },
+      {
+        "post_id": "2011092036854952372",
+        "gold": "exclude",
+        "pred": "include",
+        "reason_code": "employment_concern",
+        "text_sample": "@haloOCTA @hrdbacot kemungkinan bakal ada \n\ndengan kualitas literasi kek sekarang? ditambah susah cari kerja\nmodus jual ",
+        "error_type": "False Positive (Over-inclusion)"
+      },
+      {
+        "post_id": "2020129737239310657",
+        "gold": "exclude",
+        "pred": "include",
+        "reason_code": "employment_concern",
+        "text_sample": "@poconxg Skwkwkw susah cari kerja nya",
+        "error_type": "False Positive (Over-inclusion)"
+      },
+      {
+        "post_id": "2023757499615322234",
+        "gold": "exclude",
+        "pred": "include",
+        "reason_code": "employment_concern",
+        "text_sample": "@KompasTV Kenapa @Kemenag_RI   ga pinjem atau sewa aula kanwil depag jakarta sih kalau alesan kantor kemenag jalannya la",
+        "error_type": "False Positive (Over-inclusion)"
+      }
+    ],
+    "limitations": [
+      "Historical manual labels (95 records) may have slight contamination from earlier rule tuning.",
+      "Independent stratified sample (data/interim/evaluation_sample.csv) is provided for external validation.",
+      "Quality gate target precision of 0.85 requires continuous refinement on domain-specific ambiguity."
+    ]
+  }
+}

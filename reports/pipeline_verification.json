@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "verified_at": "2026-10-27T20:13:52.379305",
+  "checks": {
+    "raw_records_stored": {
+      "baseline": 3292,
+      "actual": 3292,
+      "pass": true
+    },
+    "unique_valid_wib": {
+      "baseline": 1781,
+      "actual": 1781,
+      "pass": true
+    },
+    "candidate_unverified": {
+      "baseline": 936,
+      "actual": 936,
+      "pass": true
+    },
+    "confirmed_relevant": {
+      "baseline": 64,
+      "actual": 64,
+      "pass": true
+    },
+    "combined_analysis_candidates": {
+      "baseline": 1000,
+      "actual": 1000,
+      "pass": true
+    }
+  },
+  "summary": {
+    "raw_records_stored": 3292,
+    "raw_valid_date_occurrences": 1829,
+    "raw_outside_requested_window": 1463,
+    "raw_missing_required_fields": 0,
+    "unique_valid_wib": 1781,
+    "statuses": {
+      "candidate_unverified": 936,
+      "confirmed_relevant": 64,
+      "needs_review": 618,
+      "confirmed_excluded": 31,
+      "auto_excluded": 132
+    },
+    "auto_labels": {
+      "candidate": 1027,
+      "review": 622,
+      "exclude_auto": 132
+    },
+    "auto_reasons": {
+      "employment_context": 1027,
+      "abroad_without_clear_work": 230,
+      "work_context_not_specific": 373,
+      "no_employment_topic": 90,
+      "too_short": 42,
+      "possible_incidental_mention": 5,
+      "possible_recruitment_promotion": 6,
+      "possible_promo_or_event": 8
+    },
+    "manual_decisions": {
+      "include": 64,
+      "exclude": 31
+    },
+    "total_analysis_ready": 1000,
+    "analysis_ready_groups": {
+      "A": 151,
+      "B": 538,
+      "C": 313,
+      "D": 8
+    }
+  }
+}

@@ -1,0 +1,2 @@
+﻿post_id,timestamp_wib,selection_source,text_raw,exclusion_reason,notes
+2030131219137278032,2026-03-07,model_include,https://t.co/b90akssw0G,text_empty_after_preprocessing,Post only contained a URL hyperlink without usable linguistic text for topic or sentiment analysis.

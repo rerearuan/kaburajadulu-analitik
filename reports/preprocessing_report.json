@@ -1,0 +1,44 @@
+{
+  "source_file": "data/processed/analysis_ready.csv",
+  "source_sha256": "666b9cb87c20a6ab68c6c9d3b314a8da0c5eb0795cedd7fb4e31cf29fad934bf",
+  "output_file": "data/processed/text_preprocessed.csv",
+  "output_sha256": "14467c11d8bd92cef69fc6e11c30e41fc2918ff570c3c7a557237e7ce3b6d1e2",
+  "input_rows": 1000,
+  "output_rows": 1000,
+  "unique_post_ids": 1000,
+  "status_counts": {
+    "candidate_unverified": 936,
+    "confirmed_relevant": 64
+  },
+  "language_breakdown": {
+    "indonesian": 948,
+    "english": 13,
+    "mixed_id_en": 39
+  },
+  "clean_empty_count": 0,
+  "possible_truncation_heuristic_count": 646,
+  "explicit_truncation_signal_count": 16,
+  "preprocessing_steps": [
+    "HTML entity unescaping (html.unescape)",
+    "Unicode NFC normalization",
+    "URL removal",
+    "Mention removal",
+    "Control-character spacing",
+    "Casefold normalization",
+    "Explicit whole-token slang dictionary",
+    "Whitespace collapse",
+    "Task-specific representation mapping (topic / sentiment)"
+  ],
+  "preserved": [
+    "text_raw (100% byte-exact)",
+    "hashtags (#kaburajadulu)",
+    "emoji and pictographs",
+    "negation (tidak/bukan/belum/jangan)",
+    "source provenance and engagement metadata"
+  ],
+  "notes": [
+    "text_topic and text_sentiment are tailored baselines for downstream BERTopic and sentiment modeling.",
+    "possible_truncation is a broad heuristic; explicit_truncation isolates ellipsis or dangling phrases.",
+    "text_raw is strictly unmutated."
+  ]
+}

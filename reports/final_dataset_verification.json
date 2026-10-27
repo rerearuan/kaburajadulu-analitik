@@ -1,0 +1,22 @@
+{
+  "output_file": "/Users/reginaaruan/Documents/ANMEDSOS/data/processed/final_corpus.csv",
+  "output_sha256": "4ea0ae5ea5efd19afa5d9ca8bba995a6a96bfd25bd7105137ae70d1fcd398b9c",
+  "total_final_corpus_records": 1492,
+  "unique_post_ids": 1492,
+  "selection_source_breakdown": {
+    "historical_manual_include": 64,
+    "model_include": 1428
+  },
+  "rq_counts_in_final_corpus": {
+    "employment_issue": 703,
+    "abroad_aspiration": 189,
+    "abroad_discourse": 425,
+    "issue_abroad_link": 6
+  },
+  "integrity_checks": {
+    "no_duplicate_post_id": true,
+    "no_empty_raw_text": true,
+    "historical_exclusions_prevented": true,
+    "timestamp_in_wib": true
+  }
+}
