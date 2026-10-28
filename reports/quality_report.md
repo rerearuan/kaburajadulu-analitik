@@ -1,7 +1,7 @@
 # ANMEDSOS TK-2 Data Collection Pipeline Quality Report
 
 **Verification Status:** `PASS` ✅
-**Generated:** 2026-10-27T20:13:52.379305
+**Generated:** 2026-10-28T20:26:50.645698
 
 ## 1. Executive Summary & Baseline Reproduction
 
@@ -94,7 +94,7 @@ Research period covers January 1, 2026 to October 25, 2026 inclusive.
 
 - **Classifier Identifier:** `anmedsos-rule-hybrid-v1` (Deterministic local rule & lexical-discourse classifier; operates offline without external LLM API or neural embedding inference)
 - **Total Records Evaluated with Semantic Model:** 1,781
-- **Independent Stratified Evaluation Sample Generated:** `data/interim/evaluation_sample.csv` (N=150, seed=42, un-prefilled)
+- **Independent Stratified Evaluation Sample Generated:** `/Users/reginaaruan/Documents/ANMEDSOS/data/interim/evaluation_sample.csv` (N=150, seed=42, un-prefilled)
 - **Benchmark against Historical Manual Ground Truth (N=95):**
   - True Positives (TP): 63 | False Positives (FP): 25
   - False Negatives (FN): 1 | True Negatives (TN): 6

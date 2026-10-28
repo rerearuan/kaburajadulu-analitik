@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "verified_at": "2026-10-27T20:13:52.379305",
+  "verified_at": "2026-10-28T20:26:50.645698",
   "checks": {
     "raw_records_stored": {
       "baseline": 3292,

@@ -1,113 +1,74 @@
 {
-  "report_title": "ANMEDSOS Research Question Coverage Report (Reconciled TK-2 Release v1)",
-  "source_corpus": "data/releases/tk2_v1/corpus.csv",
-  "denominator_total_corpus": 1491,
-  "pipeline_version": "anmedsos-pipeline-tk2-v1",
-  "generated_at_utc": "2026-10-27T15:09:31.061326+00:00",
+  "total_relevant_evaluated": 1517,
   "rq_counts": {
-    "employment_issue": 985,
-    "abroad_discourse": 447,
-    "abroad_aspiration": 207,
-    "issue_abroad_link": 8
+    "employment_issue": 713,
+    "abroad_discourse": 441,
+    "abroad_aspiration": 189,
+    "issue_abroad_link": 6
   },
-  "posts_with_at_least_one_rq": 1381,
-  "contextual_posts_without_specific_rq": 110,
+  "overlap_combinations": {
+    "employment_issue": 670,
+    "abroad_discourse": 215,
+    "abroad_aspiration + abroad_discourse": 183,
+    "abroad_discourse + employment_issue": 37,
+    "abroad_aspiration + abroad_discourse + employment_issue + issue_abroad_link": 6
+  },
   "monthly_representation": {
-    "2026-01": {
-      "total": 167,
-      "employment_issue": 100,
-      "abroad_aspiration": 33,
-      "abroad_discourse": 63,
-      "issue_abroad_link": 1
-    },
-    "2026-02": {
-      "total": 164,
-      "employment_issue": 122,
-      "abroad_aspiration": 20,
-      "abroad_discourse": 39,
-      "issue_abroad_link": 2
-    },
-    "2026-03": {
-      "total": 123,
-      "employment_issue": 76,
-      "abroad_aspiration": 17,
-      "abroad_discourse": 40,
-      "issue_abroad_link": 0
-    },
-    "2026-04": {
-      "total": 147,
-      "employment_issue": 95,
-      "abroad_aspiration": 25,
-      "abroad_discourse": 47,
-      "issue_abroad_link": 1
-    },
-    "2026-05": {
-      "total": 141,
-      "employment_issue": 111,
-      "abroad_aspiration": 2,
-      "abroad_discourse": 21,
-      "issue_abroad_link": 0
-    },
-    "2026-06": {
-      "total": 161,
-      "employment_issue": 102,
-      "abroad_aspiration": 24,
-      "abroad_discourse": 49,
-      "issue_abroad_link": 0
-    },
-    "2026-07": {
-      "total": 161,
-      "employment_issue": 109,
-      "abroad_aspiration": 21,
-      "abroad_discourse": 52,
-      "issue_abroad_link": 1
-    },
-    "2026-08": {
-      "total": 172,
-      "employment_issue": 118,
-      "abroad_aspiration": 20,
-      "abroad_discourse": 46,
-      "issue_abroad_link": 2
-    },
-    "2026-09": {
-      "total": 123,
-      "employment_issue": 69,
-      "abroad_aspiration": 24,
-      "abroad_discourse": 45,
-      "issue_abroad_link": 0
-    },
-    "2026-10": {
-      "total": 132,
-      "employment_issue": 83,
-      "abroad_aspiration": 21,
-      "abroad_discourse": 45,
-      "issue_abroad_link": 1
-    }
+    "2026-01__abroad_aspiration": 32,
+    "2026-01__abroad_discourse": 63,
+    "2026-01__employment_issue": 75,
+    "2026-02__abroad_aspiration": 18,
+    "2026-02__abroad_discourse": 37,
+    "2026-02__employment_issue": 91,
+    "2026-02__issue_abroad_link": 2,
+    "2026-03__abroad_aspiration": 15,
+    "2026-03__abroad_discourse": 39,
+    "2026-03__employment_issue": 49,
+    "2026-04__abroad_aspiration": 24,
+    "2026-04__abroad_discourse": 49,
+    "2026-04__employment_issue": 60,
+    "2026-04__issue_abroad_link": 1,
+    "2026-05__abroad_discourse": 22,
+    "2026-05__employment_issue": 83,
+    "2026-06__abroad_aspiration": 23,
+    "2026-06__abroad_discourse": 48,
+    "2026-06__employment_issue": 78,
+    "2026-07__abroad_aspiration": 19,
+    "2026-07__abroad_discourse": 50,
+    "2026-07__employment_issue": 91,
+    "2026-07__issue_abroad_link": 1,
+    "2026-08__abroad_aspiration": 18,
+    "2026-08__abroad_discourse": 44,
+    "2026-08__employment_issue": 92,
+    "2026-08__issue_abroad_link": 1,
+    "2026-09__abroad_aspiration": 22,
+    "2026-09__abroad_discourse": 46,
+    "2026-09__employment_issue": 42,
+    "2026-10__abroad_aspiration": 18,
+    "2026-10__abroad_discourse": 43,
+    "2026-10__employment_issue": 52,
+    "2026-10__issue_abroad_link": 1
   },
   "rq_readiness": {
     "RQ1": {
       "label": "employment_issue",
-      "count": 985,
-      "percentage": 66.06,
+      "count": 713,
       "status": "READY (High density corpus covering grievances, hiring, wages, and layoffs)"
     },
     "RQ2_personal": {
       "label": "abroad_aspiration",
-      "count": 207,
-      "percentage": 13.88,
+      "count": 189,
       "status": "READY (Targeted migration aspiration & #KaburAjaDulu posts)"
     },
     "RQ2_public": {
       "label": "abroad_discourse",
-      "count": 447,
-      "percentage": 29.98,
+      "count": 441,
       "status": "READY (Comprehensive public information & worker debates)"
     },
     "RQ2_link": {
       "label": "issue_abroad_link",
-      "count": 8,
-      "percentage": 0.54,
-      "status": "PROVISIONAL / EXPLORATORY (Strict single-tweet causal link identified in 8 posts; broader push-factor correlation to be analyzed across RQ1 and RQ2 topics)"
+      "count": 6,
+      "status": "PROVISIONAL / EXPLORATORY (Strict single-tweet causal link identified in only 6 posts; broader push-factor correlation to be analyzed across RQ1 and RQ2 topics)"
     },
     "RQ3_sentiment": {
       "status": "NOT EXECUTED (RQ3 sentiment classification across topics has NOT been run yet; text representations are prepared with negation and polarity preserved)"
