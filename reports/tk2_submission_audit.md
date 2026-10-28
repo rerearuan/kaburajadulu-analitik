@@ -31,7 +31,7 @@ Terdapat selisih **24 postingan** antara hasil prediksi inklusi model (*1.516 po
 $$\text{Final Corpus} = 1.516 (\text{Model Include}) - 25 (\text{Manual Exclude Overruled}) + 1 (\text{Manual Include Recovered}) = \mathbf{1.492 \text{ posts}}$$
 
 ### A. 25 Postingan yang Dikeluarkan dari Final Corpus (Model: `include`, Manual: `exclude`)
-Meskipun model aturan mengidentifikasi kata kunci ketenagakerjaan, postingan ini memiliki keputusan audit manusia `manual_decision = exclude` pada [`data/interim/manual_labels.csv`](file:///Users/reginaaruan/Documents/ANMEDSOS/data/interim/manual_labels.csv). Sesuai protokol penelitian, **keputusan eksklusi manusia tidak boleh dilanggar oleh model otomatis**:
+Meskipun model aturan mengidentifikasi kata kunci ketenagakerjaan, postingan ini memiliki keputusan audit manusia `manual_decision = exclude` pada [`data/interim/manual_labels.csv`](data/interim/manual_labels.csv). Sesuai protokol penelitian, **keputusan eksklusi manusia tidak boleh dilanggar oleh model otomatis**:
 
 | No | `post_id` | Status Heuristik Lama | Alasan Model | Alasan Riil Eksklusi Manusia |
 |:---:|:---|:---|:---|:---|
@@ -73,7 +73,7 @@ Meskipun model aturan mengidentifikasi kata kunci ketenagakerjaan, postingan ini
 
 ## 3. Komposisi Korpus Akhir Berdasarkan Sumber Seleksi
 
-Dari **1.492 baris** pada [`data/processed/final_corpus.csv`](file:///Users/reginaaruan/Documents/ANMEDSOS/data/processed/final_corpus.csv):
+Dari **1.492 baris** pada [`data/processed/final_corpus.csv`](data/processed/final_corpus.csv):
 1. **`historical_manual_include`:** **64 tweet** (4.29%) — Diverifikasi oleh auditor manusia.
 2. **`model_include`:** **1.428 tweet** (95.71%) — Diseleksi secara otomatis oleh pengklasifikasi aturan leksikal-diskursus lokal (`anmedsos-rule-hybrid-v1`), berstatus **provisional**.
 
@@ -111,13 +111,13 @@ Korpus Akhir (1.492 tweet)
 
 | Berkas | Ukuran / Baris | SHA-256 Digest | Status Kelayakan |
 |:---|:---:|:---|:---:|
-| [`data/raw/raw_tweets.jsonl`](file:///Users/reginaaruan/Documents/ANMEDSOS/data/raw/raw_tweets.jsonl) | 3.292 JSON lines | `4d85c6950b83e5f8af7227c0d1b8499da9a7cb572507595814b2efcd71bdcf87` | Source Frozen |
-| [`data/interim/manual_labels.csv`](file:///Users/reginaaruan/Documents/ANMEDSOS/data/interim/manual_labels.csv) | 95 baris | `0164ee0302fbd92abed71d3b54a6dc9ae2ba201af826ed80b5ec097e567bbc0b` | Ground Truth |
-| [`data/interim/evaluation_sample.csv`](file:///Users/reginaaruan/Documents/ANMEDSOS/data/interim/evaluation_sample.csv) | 150 baris | `5fa0d38a15535529052ea6c64506c372a8d0ce1fcc1d8aef7bf9c311fb47519a` | Needs Validation |
-| [`data/processed/analysis_ready.csv`](file:///Users/reginaaruan/Documents/ANMEDSOS/data/processed/analysis_ready.csv) | 1.000 baris | `666b9cb87c20a6ab68c6c9d3b314a8da0c5eb0795cedd7fb4e31cf29fad934bf` | TK-2 Official |
-| [`data/processed/text_preprocessed.csv`](file:///Users/reginaaruan/Documents/ANMEDSOS/data/processed/text_preprocessed.csv) | 1.000 baris | `14467c11d8bd92cef69fc6e11c30e41fc2918ff570c3c7a557237e7ce3b6d1e2` | TK-2 Official |
-| [`data/processed/final_corpus.csv`](file:///Users/reginaaruan/Documents/ANMEDSOS/data/processed/final_corpus.csv) | 1.492 baris | `0e6190d2b2b1af1caca23ab06b4ab4cd868db5aa49ebd00b43c6e2bd3c904cde` | Provisional Full |
-| [`data/processed/final_preprocessed.csv`](file:///Users/reginaaruan/Documents/ANMEDSOS/data/processed/final_preprocessed.csv) | 1.492 baris | `a52797edae1421d99f0d0a160214a7c6a31282fd8e4449dd06b0df7809363038` | Provisional Full |
+| [`data/raw/raw_tweets.jsonl`](data/raw/raw_tweets.jsonl) | 3.292 JSON lines | `4d85c6950b83e5f8af7227c0d1b8499da9a7cb572507595814b2efcd71bdcf87` | Source Frozen |
+| [`data/interim/manual_labels.csv`](data/interim/manual_labels.csv) | 95 baris | `0164ee0302fbd92abed71d3b54a6dc9ae2ba201af826ed80b5ec097e567bbc0b` | Ground Truth |
+| [`data/interim/evaluation_sample.csv`](data/interim/evaluation_sample.csv) | 150 baris | `5fa0d38a15535529052ea6c64506c372a8d0ce1fcc1d8aef7bf9c311fb47519a` | Needs Validation |
+| [`data/processed/analysis_ready.csv`](data/processed/analysis_ready.csv) | 1.000 baris | `666b9cb87c20a6ab68c6c9d3b314a8da0c5eb0795cedd7fb4e31cf29fad934bf` | TK-2 Official |
+| [`data/processed/text_preprocessed.csv`](data/processed/text_preprocessed.csv) | 1.000 baris | `14467c11d8bd92cef69fc6e11c30e41fc2918ff570c3c7a557237e7ce3b6d1e2` | TK-2 Official |
+| [`data/processed/final_corpus.csv`](data/processed/final_corpus.csv) | 1.492 baris | `0e6190d2b2b1af1caca23ab06b4ab4cd868db5aa49ebd00b43c6e2bd3c904cde` | Provisional Full |
+| [`data/processed/final_preprocessed.csv`](data/processed/final_preprocessed.csv) | 1.492 baris | `a52797edae1421d99f0d0a160214a7c6a31282fd8e4449dd06b0df7809363038` | Provisional Full |
 
 ---
 

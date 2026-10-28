@@ -74,10 +74,10 @@
 
 ## 6. Berkas Luaran Tersimpan (Versioned Artifacts)
 
-- [`data/interim/automated_evaluation_sample_v1.csv`](file:///Users/reginaaruan/Documents/ANMEDSOS/data/interim/automated_evaluation_sample_v1.csv)
-- [`data/interim/automated_evaluation_full_1781_v1.csv`](file:///Users/reginaaruan/Documents/ANMEDSOS/data/interim/automated_evaluation_full_1781_v1.csv)
-- [`reports/automated_model_evaluation_report.json`](file:///Users/reginaaruan/Documents/ANMEDSOS/reports/automated_model_evaluation_report.json)
-- [`reports/automated_model_evaluation_report.md`](file:///Users/reginaaruan/Documents/ANMEDSOS/reports/automated_model_evaluation_report.md)
+- [`data/interim/automated_evaluation_sample_v1.csv`](data/interim/automated_evaluation_sample_v1.csv)
+- [`data/interim/automated_evaluation_full_1781_v1.csv`](data/interim/automated_evaluation_full_1781_v1.csv)
+- [`reports/automated_model_evaluation_report.json`](reports/automated_model_evaluation_report.json)
+- [`reports/automated_model_evaluation_report.md`](reports/automated_model_evaluation_report.md)
 
 *Catatan Integritas Data:*  
-Berkas [`data/processed/final_preprocessed.csv`](file:///Users/reginaaruan/Documents/ANMEDSOS/data/processed/final_preprocessed.csv) dan [`data/processed/final_corpus.csv`](file:///Users/reginaaruan/Documents/ANMEDSOS/data/processed/final_corpus.csv) tetap dipertahankan murni tanpa ditimpa.
+Berkas [`data/processed/final_preprocessed.csv`](data/processed/final_preprocessed.csv) dan [`data/processed/final_corpus.csv`](data/processed/final_corpus.csv) tetap dipertahankan murni tanpa ditimpa.

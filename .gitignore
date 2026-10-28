@@ -40,6 +40,7 @@ outputs/
 # with course instructors via restricted academic access, not pushed to public GitHub.
 data/raw/raw_tweets.jsonl
 data/interim/*.csv
+!data/interim/manual_labels.csv
 data/interim/*.json
 data/processed/*.csv
 data/releases/tk2_v1/corpus.csv
